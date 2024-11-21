@@ -15,11 +15,11 @@ This project implements a RESTful API using Node.js, Express, and MongoDB. The a
 - **Express** - Framework for building RESTful APIs
 - **MongoDB** - NoSQL database for storing user data
 - **Mongoose** - ODM for MongoDB to model data and handle database interaction
-- **ES Modules** - JavaScript `import`/`export` syntax enabled via `"type": "module"` in `package.json`
+- **ES Modules** - JavaScript `import`/`export` syntax enabled via `"type": "module"` in `package.json`  
 
 ## Installation
 
-1. **Clone the repository**
+1. **Clone the repository**   
 
    Clone this repository to your local machine:
 
@@ -70,6 +70,8 @@ Fetch all users from the database.
 **Response:**
 
 - **200 OK**: Returns an array of all users in the database.
+#### Screenshot:
+![Users](image.png)
 
 ### 2. **GET /users/:id**
 
@@ -83,6 +85,8 @@ Fetch a specific user by their `ObjectId`.
 
 - **200 OK**: Returns the user object.
 - **404 Not Found**: If the user with the given `ObjectId` does not exist.
+#### Screenshot:
+![User with id](image-1.png)
 
 ### 3. **POST /users**
 
@@ -102,6 +106,8 @@ Create a new user and save it to the database.
 
 - **201 Created**: Returns the created user object.
 - **400 Bad Request**: If there is a validation error (e.g., missing fields).
+#### Screenshot:
+![Post Request](image-2.png)
 
 ### 4. **PUT /users/:id**
 
@@ -126,6 +132,8 @@ Update the details of an existing user by their `ObjectId`.
 - **200 OK**: Returns the updated user object.
 - **404 Not Found**: If the user with the given `ObjectId` does not exist.
 - **400 Bad Request**: If there is a validation error.
+#### Screenshot:
+![Update Request](image-3.png)
 
 ### 5. **DELETE /users/:id**
 
@@ -139,6 +147,8 @@ Delete a user by their `ObjectId`.
 
 - **200 OK**: Returns a message confirming the deletion.
 - **404 Not Found**: If the user with the given `ObjectId` does not exist.
+#### Screenshot:
+![Delete Request](image-4.png)
 
 ## Project Structure
 
